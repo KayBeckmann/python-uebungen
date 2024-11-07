@@ -1,8 +1,12 @@
-save = open("/home/user/python-uebungen/save.txt", "w+")
+# "r" READ 
+# "r+" READ + WRITE
+# "w" WRITE
+# "a" APPEND
+save = open("/home/user/python-uebungen/save.txt", "a+")
 
 print(save.read())
 
-wort = "Test String!"
+wort = "Test String!\n"
 
 if save.writable():
     save.write(wort)
