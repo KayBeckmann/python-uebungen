@@ -12,13 +12,14 @@ if __name__ == "__main__":
 	root.title("Button")
 	root.geometry("300x100")
 
+	label = ctk.CTkLabel(root,
+						text="Hallo User")
+
 	button = ctk.CTkButton(root,
-										text="Click Me!",
-										command=say_hello)
+							text="Click Me!",
+							command=say_hello)
 	button.pack()
 
-	label = ctk.CTkLabel(root,
-									text="Hallo User")
 	label.pack()
 
 	root.mainloop()
