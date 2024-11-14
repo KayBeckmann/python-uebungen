@@ -1,6 +1,9 @@
 import tkinter as tk
 import customtkinter as ctk
 
+ctk.set_appearance_mode("System")
+ctk.set_default_color_theme("dark-blue")
+
 def say_hello():
     myInput = userInput.get()
     label.config(text = myInput)
