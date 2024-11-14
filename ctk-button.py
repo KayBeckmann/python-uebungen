@@ -1,7 +1,7 @@
 import tkinter as tk
 import customtkinter as ctk
 
-ctk.set_appearance_mode("system")
+ctk.set_appearance_mode("System")
 ctk.set_default_color_theme("dark-blue")
 
 def say_hello():
@@ -17,7 +17,7 @@ if __name__ == "__main__":
 										command=say_hello)
 	button.pack()
 
-	label = tk.Label(root,
+	label = ctk.CTkLabel(root,
 									text="Hallo User")
 	label.pack()
 
