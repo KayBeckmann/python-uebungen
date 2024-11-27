@@ -12,7 +12,7 @@ def iss_location():
     return None
 
 def iss_map(minutes, positions):
-    geo_map = Basemap(projection="ortho",lat_0=0,lon_0=0)
+    geo_map = Basemap(projection="ortho",lat_0=positions[0]["latitude"],lon_0=positions[0]["longitude"])
     geo_map.drawcoastlines()
 
     for position in positions:
